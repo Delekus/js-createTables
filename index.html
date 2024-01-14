@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Create tables</title>
+
+	<style>
+		body {
+			background-color: #232529;
+		}
+		h1 {
+			color: #fff;
+			text-align: center;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+			margin: 0 auto;
+		}
+
+		button {
+			width: 300px;
+			border: none;
+			outline: none;
+			background-color: #da6f58;
+			padding: 20px 35px;
+			border-radius: 10px;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: bolder;
+			color: #fff;
+		}
+
+		button:hover {
+			cursor: pointer;
+			background-color: transparent;
+			color: #da6f58;
+			outline: 4px solid #da6f58;
+		}
+
+		button:active {
+			transform: scale(95%);
+		}
+
+		button:disabled {
+			color: #fff;
+			background-color: darkgray;
+			outline: none;
+		}
+
+		button:disabled:active {
+			transform: scale(1);
+		}
+
+		table {
+			color: #fff;
+			font-size: 18px;
+			border-collapse: collapse;
+			border: 3px #da6f58 solid;
+		}
+
+		table tr {
+			border: 1px #da6f58 solid;
+		}
+
+		table td {
+			padding: 0;
+			height: 50px;
+			width: 50px;
+			border: 1px #da6f58 solid;
+			vertical-align: middle;
+			text-align: center;
+		}
+		.red-cell {
+			background-color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Создание таблицы на JavaScript</h1>
+	<div class="container">
+		<button id="create-button">Создать таблицу</button>
+		<button id="hide-button">Скрыть таблицу</button>
+		<button id="show-button">Показать таблицу</button>
+		<table id="table"></table>
+		<script src="script.js"></script>
+	</div>
+</body>
+
+</html>
